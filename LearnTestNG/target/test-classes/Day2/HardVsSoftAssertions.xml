@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Assertions">
+<!--    <test name="HardAssertionsPositive">-->
+<!--        <classes>-->
+<!--            <class name="Day2.HardVsSoftAssertions"/>-->
+<!--            <methods>-->
+<!--                <include name="launchOrangeHRM"/>-->
+<!--                <include name="loginWithoutEnteringPassword"/>-->
+<!--                <include name="HardAssertionPositiveExample"/>-->
+<!--            </methods>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="HardAssertionsNegative">-->
+<!--        <classes>-->
+<!--            <class name="Day2.HardVsSoftAssertions"/>-->
+<!--            <methods>-->
+<!--                <include name="launchOrangeHRM"/>-->
+<!--                <include name="loginWithoutEnteringPassword"/>-->
+<!--                <include name="HardAssertionNegativeExample"/>-->
+<!--            </methods>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="SoftAssertionExample">
+        <classes>
+            <class name="Day2.HardVsSoftAssertions">
+            <methods>
+                <include name="launchOrangeHRM"/>
+                <include name="loginWithoutEnteringPassword"/>
+                <include name="SoftAssertionsExample"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

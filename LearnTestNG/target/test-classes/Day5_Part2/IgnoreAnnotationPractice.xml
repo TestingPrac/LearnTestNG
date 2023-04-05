@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Day5_Part2">
+    <test verbose="2" preserve-order="true" name="IgnoreAllClassesPresentInThePackage">
+        <classes>
+            <class name="Day5_Part2.IgnoreAnnotationPractice1"/>
+            <class name="Day5_Part2.IgnoreAnnotationPractice2"/>
+        </classes>
+    </test>
+</suite>

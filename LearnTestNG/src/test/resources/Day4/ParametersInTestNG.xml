@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Day4ParametersInTestNG">
+
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+
+    <test preserve-order="true" name="LoginScenario-Positive">
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="username" value="Admin"/>
+        <parameter name="password" value="admin123"/>
+        <classes>
+            <class name="Day4.ParametersInTestNG">
+                <methods>
+                    <include name="openBrowser"/>
+                    <include name="OpenOrangeHRM"/>
+                    <include name="enterUserNameAndPassword"/>
+                    <include name="loginValidation"/>
+                    <include name="closeBrowser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test preserve-order="true" name="LoginScenario-Negative">
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="username" value="Admin"/>
+        <parameter name="password" value="Admin123"/>
+        <classes>
+            <class name="Day4.ParametersInTestNG">
+                <methods>
+                    <include name="openBrowser"/>
+                    <include name="OpenOrangeHRM"/>
+                    <include name="enterUserNameAndPassword"/>
+                    <include name="loginFailureErrorMessageValidation"/>
+                    <include name="closeBrowser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test preserve-order="true" name="LoginScenario-DefaultParametersDemo">
+        <classes>
+            <class name="Day4.ParametersInTestNG">
+                <methods>
+                    <include name="openBrowser"/>
+                    <include name="OpenOrangeHRM"/>
+                    <include name="enterUserNameAndPassword"/>
+                    <include name="loginFailureErrorMessageValidation"/>
+                    <include name="closeBrowser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

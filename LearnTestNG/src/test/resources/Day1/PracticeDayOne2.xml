@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Day1Suite2">
+    <test verbose="2" preserve-order="true" name="C:/Users/a853684/IdeaProjects/LearnTestNG/src/test/resources">
+        <classes>
+            <class name="Day1.PracticeDayOne1"/>
+            <class name="Day1.PracticeDayOne2">
+              <methods>
+                  <include name="setUp"/>
+                  <include name="login"/>
+                  <include name="validateTitle"/>
+                  <include name="searchCustomer"/>
+                  <include name="tearDown"/>
+              </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

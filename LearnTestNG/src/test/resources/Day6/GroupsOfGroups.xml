@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Day6Part2">
+    <test verbose="2" preserve-order="true" name="GroupsExample1">
+        <groups>
+            <define name="dailyBuild">
+                <include name="smoke"/>
+                <include name="sanity"/>
+            </define>
+            <define name="weeklyBuild">
+                <include name="smoke"/>
+                <include name="sanity"/>
+                <include name="regression"/>
+            </define>
+            <run>
+                <include name="weeklyBuild"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Day6.Group1"/>
+            <class name="Day6.Group2"/>
+        </classes>
+    </test>
+</suite>

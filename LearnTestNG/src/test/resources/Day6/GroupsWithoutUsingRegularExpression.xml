@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Day6Part5">
+    <groups>
+        <run>
+            <include name="windows.smoke"/>
+            <include name="windows.regression"/>
+            <include name="windows.sanity"/>
+        </run>
+    </groups>
+    <test name="test1">
+        <classes>
+            <class name="Day6.Group1"/>
+        </classes>
+    </test>
+    <test name="test2">
+        <classes>
+            <class name="Day6.Group2"/>
+        </classes>
+    </test>
+</suite>
