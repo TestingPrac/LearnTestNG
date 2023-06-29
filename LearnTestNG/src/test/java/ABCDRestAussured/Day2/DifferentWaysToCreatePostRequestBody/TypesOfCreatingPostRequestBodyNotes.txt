@@ -1,0 +1,9 @@
+We can create post request body in different ways:
+
+1) Post Request Body creation using HashMap
+
+2) Post Request Body creation using Org.Json
+
+3) Post Request Body creation using POJO Class (Plain Old Java Object)
+
+4) Post Request Body creation using external json file

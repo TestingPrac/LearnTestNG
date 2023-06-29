@@ -16,27 +16,19 @@ public class CreatingAndWritingAnExcel {
     public static void main(String[] args) throws IOException {
         File file = new File("src/test/resources/ExcelFiles/Excel3.xlsx");
         //FileOutputStream fos = new FileOutputStream(file);
-        Workbook workbook = new XSSFWorkbook();
-        Sheet sheet = workbook.createSheet("Test");
-
-
-
-        Row r = sheet.createRow(0);
-        Cell c1 = r.createCell(0);
-        c1.setCellValue("Hello");
-
-//        sheet.createRow(0);
-//        sheet.getRow(0).createCell(0).setCellValue("Hello");
-//        sheet.getRow(0).createCell(1).setCellValue("World");
-
-
-//        sheet.createRow(1);
-//        sheet.getRow(1).createCell(0).setCellValue("Atos");
-//        sheet.getRow(1).createCell(1).setCellValue("Syntel");
-
-         FileOutputStream fos = new FileOutputStream(file);
-        workbook.write(fos);
-        workbook.close();
+//        Workbook workbook = new XSSFWorkbook();
+//        Sheet sheet = workbook.createSheet("Test");
+//
+//
+//
+//        Row r = sheet.createRow(0);
+//        Cell c1 = r.createCell(0);
+//        c1.setCellValue("Hello");
+//
+//
+//         FileOutputStream fos = new FileOutputStream(file);
+//        workbook.write(fos);
+//        workbook.close();
 
     }
 //public static void main(String[] args) throws Exception {
