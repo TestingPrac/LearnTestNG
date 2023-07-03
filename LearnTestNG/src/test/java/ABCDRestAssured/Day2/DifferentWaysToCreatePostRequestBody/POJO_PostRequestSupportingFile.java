@@ -1,4 +1,4 @@
-package ABCDRestAussured.Day2.DifferentWaysToCreatePostRequestBody;
+package ABCDRestAssured.Day2.DifferentWaysToCreatePostRequestBody;
 
 public class POJO_PostRequestSupportingFile {
 

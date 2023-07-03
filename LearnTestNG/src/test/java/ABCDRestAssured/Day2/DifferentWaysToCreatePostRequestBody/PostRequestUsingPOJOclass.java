@@ -1,36 +1,35 @@
-package ABCDRestAussured.Day2.DifferentWaysToCreatePostRequestBody;
+package ABCDRestAssured.Day2.DifferentWaysToCreatePostRequestBody;
 
-import org.json.JSONObject;
 import org.testng.annotations.Test;
-
-import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
-public class PostRequestUsingOrgJson {
+public class PostRequestUsingPOJOclass {
+
+
 
     @Test(priority = 1)
     void createUser()
     {
-        JSONObject data = new JSONObject();
+        POJO_PostRequestSupportingFile data = new POJO_PostRequestSupportingFile();
 
-        data.put("name","John");
-        data.put("job","Engineer");
+        data.setName("John");
+        data.setJob("Engineer");
 
         given()
                 .contentType("application/json")
-                .body(data.toString())
+                .body(data)
 
         .when()
                 .post("https://reqres.in/api/users")
 
 
-        .then()
+          .then()
                  .statusCode(201)
                  .body("name",equalTo("John"))
                  .body("job",equalTo("Engineer"))
                  .log().all();
-
     }
+
 }
