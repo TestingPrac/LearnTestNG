@@ -1,6 +1,5 @@
-package ABCDRestAussured.Day5;
+package ABCDRestAssured.Day5;
 
-import io.restassured.http.ContentType;
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 import org.testng.Assert;

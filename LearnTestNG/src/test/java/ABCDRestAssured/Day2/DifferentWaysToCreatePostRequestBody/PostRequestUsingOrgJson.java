@@ -1,26 +1,24 @@
-package ABCDRestAussured.Day2.DifferentWaysToCreatePostRequestBody;
+package ABCDRestAssured.Day2.DifferentWaysToCreatePostRequestBody;
 
+import org.json.JSONObject;
 import org.testng.annotations.Test;
 
-import java.util.HashMap;
-
-
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.equalTo;
 
-public class PostRequestUsingHashMap {
-
+public class PostRequestUsingOrgJson {
 
     @Test(priority = 1)
     void createUser()
     {
-        HashMap data = new HashMap();
+        JSONObject data = new JSONObject();
+
         data.put("name","John");
         data.put("job","Engineer");
 
         given()
                 .contentType("application/json")
-                .body(data)
+                .body(data.toString())
 
         .when()
                 .post("https://reqres.in/api/users")
@@ -33,6 +31,4 @@ public class PostRequestUsingHashMap {
                  .log().all();
 
     }
-
-
 }

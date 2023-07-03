@@ -1,11 +1,9 @@
-package ABCDRestAussured.Day3;
+package ABCDRestAssured.Day3;
 
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
-
-import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 

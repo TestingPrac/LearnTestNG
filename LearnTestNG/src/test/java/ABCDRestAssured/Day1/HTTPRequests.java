@@ -1,6 +1,4 @@
-package ABCDRestAussured.Day1;
-import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
+package ABCDRestAssured.Day1;
 import static org.hamcrest.Matchers.*;
 import org.testng.annotations.Test;
 

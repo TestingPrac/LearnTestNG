@@ -1,4 +1,4 @@
-package ABCDRestAussured.Day5;
+package ABCDRestAssured.Day5;
 
 import org.testng.annotations.Test;
 

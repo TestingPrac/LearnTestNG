@@ -1,8 +1,7 @@
-package ABCDRestAussured.Day4;
+package ABCDRestAssured.Day4;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;

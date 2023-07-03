@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GoRestAPI">
+    <test name="Test1">
+        <classes>
+            <class name="ABCDRestAssured.Day8.CreateUser"/>
+        </classes>
+    </test>
+    <test name="Test2">
+        <classes>
+            <class name="ABCDRestAssured.Day8.GetUser"/>
+        </classes>
+    </test>
+    <test name="Test3">
+        <classes>
+            <class name="ABCDRestAssured.Day8.UpdateUser"/>
+        </classes>
+    </test>
+    <test name="Test4">
+        <classes>
+            <class name="ABCDRestAssured.Day8.DeleteUser"/>
+        </classes>
+    </test>
+</suite>
